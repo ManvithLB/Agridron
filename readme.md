@@ -11,8 +11,8 @@ This application leverages modern tools to provide efficient solutions for agric
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/ManvithLB/Agridron
+   cd agridron
    ```
 
 2. **Create a virtual environment**:
@@ -31,15 +31,18 @@ This application leverages modern tools to provide efficient solutions for agric
 4. **Create a `.env-flask` file** in the main directory and configure the necessary environment variables. Example:
 
    ```
-   FLASK_APP=app.py
-   FLASK_ENV=development
-   SECRET_KEY=your_secret_key
+   PORT=5001
+   DEBUG=False
+   SECRET_KEY=secret_key
+   OPENAI_API_KEY=open_api_key
+   API_KEY=api_key
+
    ```
 
 5. **Run the Flask application**:
 
    ```bash
-   flask run
+   python app.py
    ```
 
 6. **Access the application**:
