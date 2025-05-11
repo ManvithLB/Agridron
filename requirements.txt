@@ -1,0 +1,8 @@
+flask
+pyrebase4
+opencv-python
+torch
+transformers
+pillow
+numpy
+gunicorn
