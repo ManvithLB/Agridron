@@ -13,6 +13,7 @@ import logging
 import random
 from dotenv import load_dotenv
 from openai import OpenAI
+from flask_cors import CORS  
 
 # Configure logging
 logging.basicConfig(
@@ -22,6 +23,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+CORS(app) 
 
 # Load environment variables
 load_dotenv(dotenv_path=".env-flask")
